@@ -1,6 +1,2 @@
 # Sarcasm Detection using LSTM
-The above model classifies a sentence into a Sarcastic or a Non-Sarcastic comment.
-The words are embedded using One-Hot Encoder. 
-A Long-Short Term Memory RNN classifier is used for modelling with the validation accuracy of ~80%.
-The notebook ends with an example sentence which is being predicted as Sarcastic/Non-Sarcastic.
-Thank You
+Here we are creating a maodel which will predict whether the comment is sarcastic or non-sarcastic. I have taken this dataset because even though it is binary classification, detecting sarcastic comments can be tough for a model created from scratch due to chances of overfitting  as the model has to find the underlying relationship between each comment and classify the phrases as well as the words which might sound sarcastic to a person. So this could be done with proper tokenization and with hyperparamters tuned to avoid overfitting and hence we  have used transformers which gives an API for pretrained models.We have used the pretrained BERT Sequence Classification model in this case to classify the text as Sarcastic or Non-Sarcastic
